@@ -8,48 +8,40 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff8f0;
+    background-color: #ffffff;
     color: #333;
+    background-image: url(assests/orderback.png);
 }
 
-header {
-    background-color: #f4d186;
-    padding: 20px 50px;
+.navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* background-color: #2a2e46; */
+    padding: 10px 20px;
 }
 
-.logo {
+.navbar .logo {
+    color: #000000;
     font-size: 24px;
     font-weight: bold;
-    color: #f2a60c;
 }
 
-nav ul {
+.navbar nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 20px;
 }
 
-nav ul li {
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #000000;
+    text-decoration: none;
     font-size: 16px;
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.auth-buttons .login-btn,
-.auth-buttons .signup-btn {
-    background-color: #f2a60c;
-    border: none;
-    padding: 8px 15px;
-    color: white;
-    cursor: pointer;
-}
-
 main {
     padding: 40px;
 }
@@ -227,7 +219,7 @@ button,
 
 .radio-selection{
     position: absolute;
-    top: 840px;
+    top: 720px;
 }
 .cylinder p{
     display: flex;

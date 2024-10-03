@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #2a2e46; */
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.customer-profile {
+    background-color: #f9f1e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.profile-details h2 {
+    margin-bottom: 10px;
+    color: #2a2e46;
+}
+
+.profile-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.purchase-btn {
+    background-color: #00358a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.order-history {
+    margin-top: 30px;
+}
+
+.order-history table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.order-history table thead th {
+    background-color: #00358a;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-history table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links {
+    list-style: none;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
