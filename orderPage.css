@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+header {
+    background-color: #f4d186;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f2a60c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+    background-color: #f2a60c;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    padding: 40px;
+}
+
+.order-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.form-container h2{
+    color: #000;
+    font-family: Poppins;
+    font-size: 26.84px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.order-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 2%;
+}
+
+.order-form {
+    flex: 1;
+}
+
+.sh-1{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18.9px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.order-details {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form-group label span{
+    color: red;
+}
+
+.emsg{
+    display:flex;
+    gap: 2%;
+}
+.ssl{
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.encrypt{
+    color: var(--Neutral-600, #818EA1);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%; /* 21.45px */
+}
+.Tcylinder{
+    width: 20% !important;
+}
+
+
+.terms{
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+input[type="text"],
+button,
+.cylinder-options input[type="radio"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* General styles for the cylinder options */
+/* .cylinder-options {
+    display: flex;
+    gap: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+} */
+
+/* .cylinder-options label {
+    margin-left: -7%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cylinder-options input[type="radio"] {
+    margin-right: 10px;
+    padding: 10px;
+} */
+
+/* Styles for the selected option */
+.cylinder-options input[type="radio"]:checked + label {
+    border-radius: 5.961px;
+    border: 0.745px solid #415BE7;
+    background: #F4F5FE;
+    color: #415BE7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 0 !important;
+}
+
+
+
+.cylinder-options {
+    display: flex;
+    gap: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 10px solid transparent;
+}
+
+.cylinder-options label {
+    margin-left: -7%;
+    /* display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer; */
+}
+
+
+.cylinder-selection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cylinder {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* gap: 5px; */
+    
+}
+
+.cylinder p{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.cylinder p span{
+    color: #000;
+}
+
+.cylinder img {
+    box-shadow: -2px 3px 7px;    ;
+    width: 100%;
+    height: 25vh;
+    border-radius: 24px;
+}
+
+.map-container {
+    height: 300px;
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
+.order-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.order-btn {
+    background-color: #f2a60c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links {
+    list-style: none;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
