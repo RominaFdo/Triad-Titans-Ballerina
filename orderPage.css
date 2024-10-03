@@ -78,6 +78,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding-top: 2%;
 }
 
 .order-form {
@@ -93,15 +94,6 @@ main {
     line-height: normal;
 }
 
-.Tcylinder{
-    color: #000;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 20% !important;
-}
 
 .order-details {
     flex: 1;
@@ -109,6 +101,50 @@ main {
 
 .form-group {
     margin-bottom: 15px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form-group label span{
+    color: red;
+}
+
+.emsg{
+    display:flex;
+    gap: 2%;
+}
+.ssl{
+    color: #000;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.encrypt{
+    color: var(--Neutral-600, #818EA1);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%; /* 21.45px */
+}
+.Tcylinder{
+    width: 20% !important;
+}
+
+
+.terms{
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 input[type="text"],
@@ -120,14 +156,61 @@ button,
     width: 100%;
 }
 
+/* General styles for the cylinder options */
+/* .cylinder-options {
+    display: flex;
+    gap: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+} */
+
+/* .cylinder-options label {
+    margin-left: -7%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cylinder-options input[type="radio"] {
+    margin-right: 10px;
+    padding: 10px;
+} */
+
+/* Styles for the selected option */
+.cylinder-options input[type="radio"]:checked + label {
+    border-radius: 5.961px;
+    border: 0.745px solid #415BE7;
+    background: #F4F5FE;
+    color: #415BE7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-left: 0 !important;
+}
+
+
+
 .cylinder-options {
     display: flex;
     gap: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 10px solid transparent;
 }
 
 .cylinder-options label {
-    margin-left: 5px;
+    margin-left: -7%;
+    /* display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer; */
 }
+
 
 .cylinder-selection {
     display: flex;
@@ -136,14 +219,27 @@ button,
 
 .cylinder {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    gap: 5px;
+    /* gap: 5px; */
+    
+}
+
+.cylinder p{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.cylinder p span{
+    color: #000;
 }
 
 .cylinder img {
-    width: 60px;
-    height: 100px;
+    box-shadow: -2px 3px 7px;    ;
+    width: 100%;
+    height: 25vh;
+    border-radius: 24px;
 }
 
 .map-container {
