@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         town: "Ja-Ela",
         contactNumber: "0771245689",
         whatsappNumber: "0771245689",
-        profilePicture: "path/to/profile/pic.jpg"
+        // profilePicture: "path/to/profile/pic.jpg"
+        profilePicture: "assests/profile.png"
     };
 
     document.getElementById("first-name").innerText = customer.firstName;

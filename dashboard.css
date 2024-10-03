@@ -1,21 +1,27 @@
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    background-image: url(assests/Back.png);
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
 }
 
+
+/* Header.................... */
 .navbar {
     display: flex;
     justify-content: space-between;
-    /* background-color: #2a2e46; */
     padding: 10px 20px;
+    margin-top:2.5% ;
 }
 
 .navbar .logo {
@@ -40,23 +46,38 @@ body {
     text-decoration: none;
     font-size: 16px;
 }
+/* Header.................... */
+
+
+
+
+
+/* Profile.................... */
 
 .customer-profile {
-    background-color: #f9f1e9;
+    /* background-color: #f9f1e9; */
+    background-image: url(assests/Profileback.png);
+    background-size: auto 80%;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .profile-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline;
+}
+.profile-picture{
+    flex: 1;
+    margin-left: 20px;
 }
 
+
 .profile-picture img {
+/* 
     width: 150px;
-    height: 150px;
+    height: 150px; */
     border-radius: 50%;
 }
 
@@ -64,7 +85,7 @@ body {
     flex: 1;
     margin-left: 20px;
 }
-
+/*
 .profile-details h2 {
     margin-bottom: 10px;
     color: #2a2e46;
@@ -73,7 +94,12 @@ body {
 .profile-details p {
     font-size: 16px;
     margin: 5px 0;
-}
+} */
+
+
+/* Profile.................... */
+
+
 
 .purchase-btn {
     background-color: #00358a;
@@ -86,6 +112,8 @@ body {
     font-size: 16px;
 }
 
+
+/* Order History.................... */
 .order-history {
     margin-top: 30px;
 }
@@ -107,6 +135,12 @@ body {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
+
+/* Order History.................... */
+
+
+
+/* Footer.................... */
 
 footer {
     background-color: #333;
@@ -137,3 +171,5 @@ footer {
     height: 30px;
     margin-right: 10px;
 }
+
+/* Footer.................... */
