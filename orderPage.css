@@ -225,6 +225,10 @@ button,
     
 }
 
+.radio-selection{
+    position: absolute;
+    top: 840px;
+}
 .cylinder p{
     display: flex;
     justify-content: space-evenly;

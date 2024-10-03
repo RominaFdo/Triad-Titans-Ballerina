@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadoo - Place Your Order</title>
     <link rel="stylesheet" href="orderPage.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVYB2o6UxnN3xiEkclavpzG3MB7XVqrD4&callback=initMap" async defer></script>
 </head>
 <body>
     <header>
@@ -106,7 +106,7 @@
                                 <label>Select Gas Cylinder size option <span>*</span></label>
                                 <div class="cylinder-selection">
                                     <div class="cylinder">
-                                        <input type="radio" id="large-cylinder" name="cylinder-size" value="l" required>
+                                        <input type="radio" class="radio-selection" id="large-cylinder" name="cylinder-size" value="l" required>
                                         <label for="large-cylinder">
                                             <img src="assests/cylinder1.png" alt="Large Cylinder">
                                             <p><span>New</span><span>Rs.16000</span></p>
@@ -114,7 +114,7 @@
                                         </label>
                                     </div>
                                     <div class="cylinder">
-                                        <input type="radio" id="medium-cylinder" name="cylinder-size" value="m" required>
+                                        <input type="radio" class="radio-selection" id="medium-cylinder" name="cylinder-size" value="m" required>
                                         <label for="medium-cylinder">
                                             <img src="assests/cylinder2.png" alt="Medium Cylinder">
                                             <p><span>New</span><span>Rs.8000</span></p>
@@ -122,7 +122,7 @@
                                         </label>
                                     </div>
                                     <div class="cylinder">
-                                        <input type="radio" id="small-cylinder" name="cylinder-size" value="s" required>
+                                        <input type="radio" class="radio-selection" id="small-cylinder" name="cylinder-size" value="s" required>
                                         <label for="small-cylinder">
                                             <img src="assests/cylinder3.png" alt="Small Cylinder">
                                             <p><span>New</span><span>Rs 4000</span></p>
@@ -210,12 +210,74 @@
     </script> -->
     <script>
         function initMap() {
+    const shopLocation = { lat: 6.9271, lng: 79.8612 }; // Colombo, Sri Lanka (Gas Shop)
+
+    // Initialize the map centered on Sri Lanka
+    const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 6.9271, lng: 79.8612 }, // Sri Lanka
+        zoom: 12,
+    });
+
+    // Add a marker for the shop location with a title "Gas Shop"
+    const shopMarker = new google.maps.Marker({
+        position: shopLocation,
+        map: map,
+        title: "Our Gas Shop", // Label for the marker
+    });
+
+    let userMarker;
+
+    // Add click event listener to place a marker on user's chosen location
+    google.maps.event.addListener(map, 'click', function (event) {
+        placeMarker(event.latLng);
+    });
+
+    // Function to place a marker at the clicked location
+    function placeMarker(location) {
+        if (userMarker) {
+            userMarker.setPosition(location);
+        } else {
+            userMarker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+        // Call the function to calculate distance after placing the marker
+        calculateDistance(shopLocation, location);
+    }
+
+    // Function to calculate the distance between shopLocation and userLocation
+    function calculateDistance(shopLocation, userLocation) {
+        const service = new google.maps.DistanceMatrixService();
+
+        service.getDistanceMatrix({
+            origins: [shopLocation], // Shop location
+            destinations: [userLocation], // User's selected location
+            travelMode: google.maps.TravelMode.DRIVING, // Travel mode
+        }, function (response, status) {
+            if (status === 'OK') {
+                const results = response.rows[0].elements[0];
+                const durationText = results.duration.text; // Duration (e.g., "30 mins")
+
+                // Store the duration in the hidden input field
+                document.getElementById('delivery-duration').value = durationText;
+            } else {
+                alert('Error calculating distance');
+            }
+        });
+    }
+}
+
+    </script>
+    <!-- <script>
+        function initMap() {
             const shopLocation = { lat: 6.9271, lng: 79.8612 }; // Example: Colombo, Sri Lanka
     
             // Initialize the map
             const map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 7.8731, lng: 80.7718 }, // Sri Lanka
-                zoom: 8,
+                center: { lat: 6.9271, lng: 79.8612 }, // Sri Lanka
+                zoom: 12,
             });
     
             let marker;
@@ -261,7 +323,7 @@
                 });
             }
         }
-    </script>
+    </script> -->
     
 </body>
 </html>
