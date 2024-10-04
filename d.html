@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Shop Dashboard</title>
+    <link rel="stylesheet" href="d.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">Jadoo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="customer-profile">
+            <div class="profile-header">
+                <div class="profile-picture">
+                    <img src="assests/profile.png" alt="Profile Picture" id="profile-pic">
+                </div>
+                <div class="profile-details">
+                    <h2>Customer Profile</h2>
+                    <p><strong>First Name:</strong> <span id="first-name">Saman</span></p>
+                    <p><strong>Last Name:</strong> <span id="last-name">Perera</span></p>
+                    <p><strong>NIC:</strong> <span id="nic">199570100887</span></p>
+                    <p><strong>Address:</strong> <span id="address">16, Neel Road, Dalathura</span></p>
+                    <p><strong>Nearest Town:</strong> <span id="town">Ja-Ela</span></p>
+                    <p><strong>Contact Number:</strong> <span id="contact-number">0771245689</span></p>
+                    <p><strong>WhatsApp Number:</strong> <span id="whatsapp-number">0771245689</span></p>
+                </div>
+            </div>
+            <button class="purchase-btn">Purchase Gas Now</button>
+        </section>
+
+        <section class="order-history">
+            <h2>Order History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order No</th>
+                        <th>Order</th>
+                        <th>Total Amount (Rs)</th>
+                        <th>Order Date/Time</th>
+                        <th>Order Status</th>
+                    </tr>
+                </thead>
+                <tbody id="order-table">
+                    <!-- Dynamic Data Here -->
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>query@lehladakhindia.com</p>
+                    <p>Don't wait any longer. Contact us!</p>
+                    <p>+(91) 11 – 4242 3100</p>
+                </div>
+                <ul class="quick-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">SiteMap</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <div class="social-media">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="d.js"></script>
+</body>
+</html>

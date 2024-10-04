@@ -1,6 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    background-color: #FFF;
+    
+}
+
+/* Header styles */
+header {
+    padding-top: 7.407vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* position: fixed*/
+
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    color: var(--1st, #212832);
+    font-family:roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left:1.739vw ;
+    padding-right: 1.739vw;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+#login,#sign-up {
+    background-color: #0E1A59;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,36 +70,9 @@ body {
     color: #333;
     background-image: url(assests/orderback.png);
 }
+ */
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    /* background-color: #2a2e46; */
-    padding: 10px 20px;
-}
 
-.navbar .logo {
-    color: #000000;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.navbar nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar nav ul li {
-    margin: 0 15px;
-}
-
-.navbar nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-}
 main {
     padding: 40px;
 }
