@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Replace this with actual data fetching from MySQL using Ballerina
     let customer = {
-        firstName: "Saman",
-        lastName: "Perera",
+        firstName: "Nimal",
+        lastName: "Serasighe",
         nic: "199570100887",
         address: "16, Neel Road, Dalathura",
         town: "Ja-Ela",
