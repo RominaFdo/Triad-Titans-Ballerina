@@ -9,7 +9,7 @@
 <body>
     <div class="form-container">
         <h1>Add Driver Details</h1>
-        <form class="driver-form">
+        <form class="driver-form" method="post" action="http://localhost:8080/driver/add">
             <div class="form-row">
                 <div class="form-group">
                     <label for="first-name">First Name</label>
@@ -60,7 +60,7 @@
                     <input type="text" id="contact2" placeholder="Enter Contact Number" name="Cont.No2">
                 </div>
             </div>
-            <button type="submit" class="submit-btn">Add Driver</button>
+            <input type="submit" class="submit-btn" value="Add Driver">
         </form>
     </div>
 </body>
