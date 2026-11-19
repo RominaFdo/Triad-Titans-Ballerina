@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Shop Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div id="logoimg">
+            <img src="assests/logo.gif" alt="logo" width="70.702vW" height="70.248wh">
+        </div>
+        <div id="navbar">
+            <nav>
+                <div>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#view-us">Contact Us</a></li>
+                      
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="loginbtn" style="padding-right:0px"> <a href="#" id="login">Log In</a></div>
+        <div id="signupbtn"><a href="#" id="signup">Sign up</a></div>
+    </header>
+
+    <div class="profile-header">
+        <div class="profile-picture">
+            <img src="assests/profile.png" alt="Profile Picture" id="profile-pic">
+        </div>
+        <div class="profile-details">
+            <h2>Customer Profile</h2>
+            <p class="p"><strong>First Name:</strong> <p class="profile-details-value" id="first-name">Saman</p></p>
+            <p class="p"><strong>Last Name:</strong> <p class="profile-details-value" id="last-name">Perera</p></p>
+            <p class="p"><strong>NIC:</strong> <p class="profile-details-value" id="nic">199570100887</p></p>
+            <p class="p"><strong>Address:</strong> <p class="profile-details-value" id="address">16, Neel Road, Dalathura</p></p>
+            <p class="p"><strong>Nearest Town:</strong> <p class="profile-details-value" id="town">Ja-Ela</p></p>
+            <p class="p"><strong>Contact Number:</strong> <p class="profile-details-value" id="contact-number">0771245689</p></p>
+            <p class="p"><strong>WhatsApp Number:</strong> <p class="profile-details-value" id="whatsapp-number">0771245689</p></p>
+        </div>
+    </div>
+    <div class="btn-back">
+        <button class="purchase-btn" >Purchase Gas Now</button>
+    </div>
+    <hr class="hr1">
+    <div>
+        <section class="order-history">
+            <h2>Order History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order No</th>
+                        <th>Order</th>
+                        <th>Total Amount (Rs)</th>
+                        <th>Order Date/Time</th>
+                        <th>Order Status</th>
+                    </tr>
+                </thead>
+                <tbody id="order-table">
+                    <!-- Dynamic Data Here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div>
+        <footer>
+            <div id="footer-left">
+                <div>
+                    <div id ="mail">
+                        <img src="assests/message.gif"width="27px" height="27px">
+                    <a href="mailto:justdilivery123@gmail.com" style="text-decoration: none; padding-left:0; margin-left:0;">justdilivery123@gmail.com</a>
+                    </div>
+                    <div id ="dis">
+                        <p>Don't wait any longer. Contact us!</p>
+                    </div>
+                    <div id="tel">
+                        <img src="assests/phone.gif"width="27px" height="27px">
+                        <a href="tel:0112345678" style="text-decoration: none; padding-left:0; margin-left:0;" >011-2345678</a>
+                    </div>
+                  
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" aria-label="Facebook"><img src="assests/FB.svg"></a>
+                    <a href="https://x.com/" aria-label="Twitter"><img src="assests/Twitter.svg"></a>
+                    <a href="https://www.instagram.com/accounts/login/" aria-label="Instagram"><img src="assests/intra.svg"></a>
+                </div>
+            </div>
+            <div id="footer-right">
+                <div>
+                    <h2>Quick Links</h2>
+                </div>
+                <div id="links">
+                    <ul>
+                        <div style="display: inline;"><li><img src="assests/Vector1.svg"><a href="#about">About us</a></li></div>
+                        <div style="display: inline;"><li><img src="assests/Vector1.svg"><a href="#services">Our Services</a></li></div>
+                        <div style="display: inline;"><li><img src="assests/Vector1.svg"><a href="view-us">Visit Us</a></li></div>
+                        <div style="display: inline;"><li><img src="assests/Vector1.svg"><a href="#hero">Home</a></li></div>
+                        <div style="display: inline;"><li><img src="assests/Vector1.svg"><a href="#hero">Sign In</a></li></div>
+
+                    </ul>
+                </div>   
+            </div>
+        </footer>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.order-container {
+    text-align: center;
+    background-color: #f9f7fc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    width: 500px;  /* Increased the width for a more professional layout */
+}
+
+h1 {
+    font-size: 28px;  /* Larger font for a more professional header */
+    margin-bottom: 25px;
+    font-weight: 600;  /* Bold and sleek */
+}
+
+.order-box {
+    background-color: #f2f2f2;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.order-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #4c4a92;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.order-box p {
+    margin-bottom: 15px;
+    font-size: 18px;  /* Increased font size for readability */
+    line-height: 1.7;  /* Slightly more space between lines for better clarity */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;  /* Larger font for buttons */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    color: white;
+    font-weight: bold;
+}
+
+.confirm {
+    background-color: #4c4a92;
+}
+
+.edit {
+    background-color: #6b6bcf;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:focus {
+    outline: none;
+}
