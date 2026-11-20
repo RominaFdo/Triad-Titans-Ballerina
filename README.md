@@ -1,6 +1,6 @@
 # Triad Titans – Gas Delivery App (Ballerina Competition)
 
-A domestic gas (LPG cylinder) ordering and home-delivery web app, started by team **Triad Titans** in 2024 for the Ballerina competition organized by WSO2.
+A domestic gas (LPG cylinder) ordering and home-delivery web app, started by team **Triad Titans** in 2024 for the IEEE UoM Ballerina competition organized by WSO2.
 
 ## What's here
 
